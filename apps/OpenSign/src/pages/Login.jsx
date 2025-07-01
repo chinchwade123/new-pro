@@ -506,7 +506,15 @@ function Login() {
                         className="op-btn op-btn-primary"
                         disabled={state.loading}
                       >
-                        {state.loading ? t("loading") : t("login")}
+                        {state.loading ? t("loading", "Loading...") : t("login", "Login")}
+                      </button>
+                      <button
+                        type="button"
+                        className="op-btn op-btn-error" // DaisyUI error color for red
+                        disabled={state.loading}
+                        onClick={() => navigate("/create-account")}
+                      >
+                        {t("create-new-account", "Create New Account")}
                       </button>
                     </div>
                   </form>

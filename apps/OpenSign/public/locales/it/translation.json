@@ -1033,5 +1033,20 @@
   "choose-one":"Scegline uno",
   "search-templates": "Cerca modelli…",
   "search-documents": "Cerca documenti…",
-  "search-contacts": "Cerca contatti…"
+  "search-contacts": "Cerca contatti…",
+  "fill-all-fields": "Please fill all required fields.",
+  "invalid-email-format": "Please enter a valid email address.",
+  "passwords-do-not-match": "Passwords do not match.",
+  "password-too-short": "Password must be at least 6 characters long.",
+  "account-created-success": "Account created successfully! Please login.",
+  "account-creation-failed": "Account creation failed. Please try again.",
+  "email-already-taken": "This email address is already registered.",
+  "create-account-title": "Create Account",
+  "create-your-account": "Create Your Account",
+  "start-your-journey": "Start your journey with OpenSign™.",
+  "full-name": "Full Name",
+  "creating-account": "Creating Account...",
+  "already-have-account": "Already have an account? Login",
+  "create-account-alt-img": "Illustration for account creation page",
+  "create-new-account": "Create New Account"
 }
