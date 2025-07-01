@@ -10,22 +10,8 @@ async function saveUser(userDetails) {
   const userRes = await userQuery.first({ useMasterKey: true });
 
   if (userRes) {
-    const url = `${serverUrl}/loginAs`;
-    const axiosRes = await axios({
-      method: 'POST',
-      url: url,
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8',
-        'X-Parse-Application-Id': APPID,
-        'X-Parse-Master-Key': masterKEY,
-      },
-      params: {
-        userId: userRes.id,
-      },
-    });
-    const login = await axiosRes.data;
-    // console.log("login ", login);
-    return { id: login.objectId, sessionToken: login.sessionToken };
+    // User already exists, return an error
+    return { error: true, code: 202, message: "Email already taken." };
   } else {
     const user = new Parse.User();
     user.set('username', userDetails.email);
