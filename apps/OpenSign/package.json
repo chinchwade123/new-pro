@@ -53,7 +53,7 @@
     "regex-parser": "^2.3.1",
     "serve": "^14.2.4",
     "styled-components": "^5.3.11",
-    "web-vitals": "^5.0.2",
+    "web-vitals": "^5.0.3",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
   },
   "scripts": {
