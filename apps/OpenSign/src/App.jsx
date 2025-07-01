@@ -30,6 +30,7 @@ const AddAdmin = lazy(() => import("./pages/AddAdmin"));
 const UpdateExistUserAdmin = lazy(() => import("./pages/UpdateExistUserAdmin"));
 const Preferences = lazy(() => import("./pages/Preferences"));
 const Login = lazy(() => import("./pages/Login"));
+const CreateAccount = lazy(() => import("./pages/CreateAccount")); // Added CreateAccount
 const VerifyDocument = lazy(() => import("./pages/VerifyDocument"));
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/legacy/build/pdf.worker.min.mjs`;
 const AppLoader = () => {
@@ -75,6 +76,10 @@ function App() {
                   <Route
                     path="/upgrade-2.1"
                     element={<LazyPage Page={UpdateExistUserAdmin} />}
+                  />
+                  <Route
+                    path="/create-account" // Added route for CreateAccount
+                    element={<LazyPage Page={CreateAccount} />}
                   />
             </Route>
             <Route element={<Validate />}>
